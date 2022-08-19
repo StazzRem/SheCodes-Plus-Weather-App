@@ -1,6 +1,17 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+.container {
+  display: block;
+  max-width: 850px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #e8f3dc;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid #8ec351 2px;
+}
 h1,
 h2,
 h3 {
@@ -30,7 +41,7 @@ form {
 #searchbutton {
   background-color: #8ec9f9;
   border: solid #8ec9f9 2px;
-  color: #4187e2;
+  color: #366fb9;
   border-radius: 2px;
   padding-left: 20px;
   padding-right: 20px;
