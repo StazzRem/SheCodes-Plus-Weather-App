@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,22 +22,23 @@
           <h2>Tuesday 19th July</h2>
           <h3>12:00</h3>
           <h4>
-            <span class="temp"> 30 </span>
-            <span class="degrees">
+            <span id="temp"> 30 </span>
+            <span id="degrees">
               <a href="#" class="celsius">°C</a> |
               <a href="#" class="fahrenheit">°F</a>
             </span>
           </h4>
+          <br />
+          <span id="description">Clear skies with broken clouds</span>
+
           <div class="row" id="grid2">
             <div class="col" id="col2">
-              Clear skies with a mild breeze <br />
-              <strong>High / Low</strong> <br />
-              26°C / 32°C
+              <strong> Low / High</strong> <br />
+              <span id="minTemp">26</span>°C / <span id="maxTemp">32</span>°C
             </div>
             <div class="col col-sm-4" id="col3">
-              Precipitation: 2% <br />
-              Wind: 5km/h <br />
-              Humidity: 86%
+              Wind: <span id="wind">5</span>km/h <br />
+              Humidity: <span id="humidity">86</span>%
             </div>
           </div>
         </div>
@@ -120,6 +122,7 @@
       <form id="city-search" autocomplete="off">
         <input type="search" placeholder="Enter city name" id="searchbar" />
         <input type="submit" value="Search" id="searchbutton" />
+        <input type="button" value="Current" id="currentbutton" />
       </form>
     </div>
     <br />
