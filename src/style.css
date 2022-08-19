@@ -86,7 +86,7 @@ form {
   background-color: #84c0ff;
   border: solid #84c0ff 2px;
 }
-#currentbutton {
+#localbutton {
   background-color: #8ef98e;
   border: solid #8ef98e 2px;
   color: #3ab936;
@@ -95,7 +95,7 @@ form {
   padding-right: 20px;
   transition: all 200ms ease-in-out;
 }
-#currentbutton:hover {
+#localbutton:hover {
   background-color: #84ff84;
   border: solid #84ff84 2px;
 }

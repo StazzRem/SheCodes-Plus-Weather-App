@@ -57,8 +57,8 @@ function getPosition() {
   navigator.geolocation.getCurrentPosition(usePosition);
 }
 
-let currentButton = document.querySelector("#currentbutton");
-currentButton.addEventListener("click", getPosition);
+let myLocationButton = document.querySelector("#localbutton");
+myLocationButton.addEventListener("click", getPosition);
 
 function getData(response) {
   console.log(response.data); // This shows the data for the city searched
@@ -120,7 +120,7 @@ function getData(response) {
 function getApi(event) {
   event.preventDefault(); // prevents default behaviour such as refreshing the page
 
-  let newCity = document.querySelector("#cityInput"); // selecting the searchbar input
+  let newCity = document.querySelector("#searchbar"); // selecting the searchbar input
   console.log(`${newCity.value}`); // this will show in the log the city searched
 
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${newCity.value}&appid=${apiKey}&units=metric`;
@@ -133,7 +133,7 @@ function getApi(event) {
   //let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${newCity.value}&appid=${apiKey}`;
 }
 
-let citySearch = document.querySelector("#searchbar");
+let citySearch = document.querySelector("#city-search");
 citySearch.addEventListener("submit", getApi);
 
 function defaultCity(city) {
