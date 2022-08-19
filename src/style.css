@@ -29,6 +29,14 @@ h3 {
   margin-top: 20px;
   font-size: 50px;
 }
+img {
+  width: 320px;
+  float: right;
+}
+#currentweather {
+  padding: 0%;
+  margin-right: 12px;
+}
 form {
   margin-left: auto;
   margin-right: auto;

@@ -15,15 +15,106 @@
   </head>
   <body>
     <div class="container">
-      <h1>Amsterdam</h1>
-      <h2>Tuesday 19th July</h2>
-      <h3>
-        <span class="temp"> 30 </span>
-        <span class="degrees">
-          <a href="#" class="celsius">°C</a> |
-          <a href="#" class="fahrenheit">°F</a>
-        </span>
-      </h3>
+      <div class="row">
+        <div class="col">
+          <h1>Amsterdam</h1>
+          <h2>Tuesday 19th July</h2>
+          <h3>
+            <span class="temp"> 30 </span>
+            <span class="degrees">
+              <a href="#" class="celsius">°C</a> |
+              <a href="#" class="fahrenheit">°F</a>
+            </span>
+          </h3>
+          <div class="row" id="grid2">
+            <div class="col" id="col2">
+              Clear skies with a mild breeze <br />
+              <strong>High / Low</strong> <br />
+              26°C / 32°C
+            </div>
+            <div class="col col-sm-4" id="col3">
+              Precipitation: 2% <br />
+              Wind: 5km/h <br />
+              Humidity: 86%
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-5" id="currentweather">
+          <img src="images/suntree.gif" alt="current weather" />
+        </div>
+      </div>
+      <br />
+      <div class="row row-cols-5" id="next5days">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Weds</h5>
+              <img
+                src="images/sun_cloud.png"
+                class="card-img-top"
+                alt="sunny with clouds"
+              />
+              <p class="card-text">
+                <strong>Low / High</strong> <br />
+                23°C / 28°C
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Thurs</h5>
+              <img src="images/cloud.png" class="card-img-top" alt="cloudy" />
+              <p class="card-text">
+                <strong>Low / High</strong> <br />
+                20°C / 24°C
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fri</h5>
+              <img src="images/cloud.png" class="card-img-top" alt="cloudy" />
+              <p class="card-text">
+                <strong>Low / High</strong> <br />
+                16°C / 20°C
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sat</h5>
+              <img
+                src="images/sun_cloud.png"
+                class="card-img-top"
+                alt="sunny with clouds"
+              />
+              <p class="card-text">
+                <strong>Low / High</strong> <br />
+                18°C / 24°C
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sun</h5>
+              <img src="images/sun.png" class="card-img-top" alt="sunny" />
+              <p class="card-text">
+                <strong>Low / High</strong> <br />
+                21°C / 26°C
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <br />
       <form id="city-search" autocomplete="off">
         <input type="search" placeholder="Enter city name" id="searchbar" />
