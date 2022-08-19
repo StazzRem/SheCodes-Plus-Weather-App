@@ -29,6 +29,10 @@ h3 {
   margin-top: 20px;
   font-size: 50px;
 }
+.degrees {
+  font-size: 20px;
+  display: inline;
+}
 img {
   width: 320px;
   float: right;
@@ -36,6 +40,21 @@ img {
 #currentweather {
   padding: 0%;
   margin-right: 12px;
+}
+#col2 {
+  text-align: left;
+}
+#col3 {
+  text-align: right;
+  padding-right: 0;
+}
+#grid2 {
+  line-height: 20px;
+  margin-top: 70px;
+}
+.card-body {
+  background-color: rgba(232, 243, 220, 0.5);
+  text-align: center;
 }
 form {
   margin-left: auto;
